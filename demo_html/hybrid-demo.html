@@ -1,0 +1,26 @@
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<style type="text/css">
+a {
+ display:block;
+ background: #333;
+ border-radius: 10px;
+ color: #FFF;
+ margin: 20px;
+ padding: 5px 8px;
+ text-align: center;
+ text-decoration: none;
+}
+</style>
+<a href="#">Demo</a>
+<script type="text/javascript">
+ var button = document.querySelector('a');
+ button.addEventListener( 'click', function(e){
+	e.preventDefault();
+	native_interface.showToast("Hello from JavaScript");
+ });
+
+ function setButtonLabel(label){
+	button.innerText = label;
+ }
+
+</script>
